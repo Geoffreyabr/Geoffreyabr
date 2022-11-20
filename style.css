@@ -56,7 +56,7 @@ body{
 
 .sidebar ul li{
     margin: 20px 0;
-    line-height: 18px;
+    line-height: 16px;
     padding-top: 20px;
     font-family: 'abeezee';
     text-transform: uppercase;
@@ -146,7 +146,7 @@ body{
     background-size: cover;
    }
 
-   .mainpageaccueil button {
+ button {
 	background-color:#fab005;
 	border-radius:30px;
 	color:#10223a;
@@ -154,26 +154,25 @@ body{
     text-transform: uppercase;
 	font-size:16px;
 	font-weight:bold;
-	padding:9px;
+	padding:10px;
 	text-decoration:none;
-	text-shadow:0px 1px 13px #10223a;
     margin-left: 450px;
     margin-right: 450px;
     border:none;
     
 }
-.mainpageaccueil button:hover {
+button:hover {
 	background-color:#10223A;
     color: #10223A;
     transition: 0.4s;    
     box-shadow: -2px 0px 20px rgb(255 255 255 / 80%)!important;
 }
 
-.mainpageaccueil button a{
+button a{
     color: #10223A;
 }
 
-.mainpageaccueil button a:hover{
+button a:hover{
     color: #FFFFFF;
     transition: 0.4s;}
     
@@ -187,12 +186,15 @@ body{
     
 section .photopage2{
     background-image: url('Images p1/bouvierpage 2.jpg');
-   height: 400px;
-   width: 400px;
+   height: 270px;
+   width: 270px;
    margin-top: 100px;
    margin-left: 280px;
-   object-fit:cover;
    border-radius: 18%;
+   background-size: contain;
+   background-size: cover;
+ 
+   
    
 }
 
@@ -202,6 +204,7 @@ section .page2 aside h4 {
     font-size: 30px;
     font-family: 'abeezee';
     max-width: 50%;
+    letter-spacing: -1.5px;
 
 }
 
@@ -211,8 +214,24 @@ section .page2 aside p{
     margin-left: 100px;
     margin-top: 40px;
     opacity: 0.8;
+    letter-spacing: -0.5px;
     
 }
+
+section .page2 aside button{
+    margin-top: 55px;
+margin-left: 100px;
+padding:10px
+
+ }  
+ section aside i{
+    color: #FAB005;
+    opacity: 0.5;
+    rotate: 20deg;
+    padding:10px
+ }
+
+
 
 
         
