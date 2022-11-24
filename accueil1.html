@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <title>Le Bouvier Bernois</title>
 </head>
 
@@ -68,10 +70,11 @@
 
     <!-- *********************************         SIDEBAR ENDS HERE   ******************************* -->
 
-
+    <!-- ************************************* MAIN PAGE ACCEUIL 1 START *************************** -->
     <Section>
 
         <div class="mainpageaccueil">
+
 
             <h1>Le Bouvier Bernois</h1>
             <h2>Tout savoir sur le Bouvier Bernois</h2>
@@ -84,6 +87,8 @@
         </div>
 
     </Section>
+
+    <!-- *******************************  MAIN PAGE ACCEUIL 2 START *************************************-->
 
     <section>
         <div class="page2">
@@ -109,8 +114,96 @@
         </div>
     </section>
 
+    <!-- ****************************** main page accueil 2 end ***************************** -->
+
+
+    <!-- *************************** section slider start page accueil 2 start  ************************************ -->
+
+
+    <section>
+        <div class="slider">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images p1/slider 6.jpg" />
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ********************************************* section page accueuil 2 slider end **************************** -->
+
+    <section>
+        <div class="liensyoutube">
+            <h1><i class="fa-solid fa-paw"></i>Caméras</h1>
+            <div class="lien">
+                <div class="blob"><iframe width="420" height="315" src="https://www.youtube.com/embed/ymdiA7QV4do"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="blob2"><iframe width="420" height="315" src="https://www.youtube.com/embed/v9KLSzUbamo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="blob3"><iframe width="420" height="315" src="https://www.youtube.com/embed/KwkBCzKnTaQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <script src="https://kit.fontawesome.com/f6643294dc.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
