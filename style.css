@@ -11,6 +11,7 @@
 
 body {
     box-sizing: border-box;
+
 }
 
 /******************************************* SIDEBAR START HERE  **************************************************/
@@ -62,14 +63,14 @@ body {
     transition: all 0.8s ease-in-out;
     font-weight: 600;
     font-size: 14px;
-    
-    
+
+
 }
 
 .sidebar ul li a {
     color: #FFFFFF;
 
- 
+
 
 }
 
@@ -103,12 +104,12 @@ body {
 
 .sidebar a:hover {
     background-color: #FAB005;
-    color: #10223a; 
+    color: #10223a;
     -webkit-transition: width 1s 1s ease-in;
--moz-transition: width 1s 1s ease-in;
--o-transition: width 1s 1s ease-in;
-transition: width 1s 1s ease-in;  
-  }
+    -moz-transition: width 1s 1s ease-in;
+    -o-transition: width 1s 1s ease-in;
+    transition: width 1s 1s ease-in;
+}
 
 
 /* **************************************  SIDEBAR END HERE       ******************************************** */
@@ -119,14 +120,14 @@ transition: width 1s 1s ease-in;
     justify-content: space-around;
     align-items: center;
     margin-left: 200px;
-    width: 100%;   
+    width: 100%;
     background-image: url('Images p1/main1.jpg');
     background-repeat: no-repeat;
     opacity: 3.5;
     background-size: cover;
- 
 
-    
+
+
 }
 
 .mainpageaccueil h1 {
@@ -153,15 +154,14 @@ transition: width 1s 1s ease-in;
 
     background-size: contain;
     width: 100%;
-   }
+}
 
 .ancres {
     background-color: #FAB005;
     text-align: center;
-    width: 130px;
-    border-radius: 100% 100% 100% 100%;
-
-
+    width: 120px;
+    border-radius: 80%;
+    padding: 8px
 }
 
 .ancres a {
@@ -170,6 +170,7 @@ transition: width 1s 1s ease-in;
     font-size: 20px;
     color: #FFFFFF;
     font-family: 'abeezee';
+    text-shadow: -1px 2px #10223a;
 }
 
 
@@ -181,7 +182,8 @@ transition: width 1s 1s ease-in;
     flex-wrap: wrap;
 
 }
-.page2 p{
+
+.page2 p {
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -196,9 +198,7 @@ transition: width 1s 1s ease-in;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    
- 
-    
+
 }
 
 .page2 aside h4 {
@@ -210,11 +210,6 @@ transition: width 1s 1s ease-in;
     height: 50vh;
     border-radius: 60%;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
-
-
-
-
-
 }
 
 .page2 .ancres {
@@ -267,7 +262,7 @@ section aside i {
 .mainorigines .lienheader {
     display: flex;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'abeezee';
     color: #FFFFFF;
     text-transform: uppercase;
@@ -275,6 +270,17 @@ section aside i {
     justify-content: center;
 
 }
+
+.lienheader a {
+    color: #FAB005;
+
+}
+
+.lienheader a:hover {
+    color: #FFFFFF;
+    transition: 1s;
+}
+
 
 .mainorigines article img {
     margin-left: 100px;
@@ -299,41 +305,70 @@ section article .vieilleimage1 {
 }
 
 /* *************************** slider ***************************** */
+.pic-ctn {
+    width: 100vw;
+    height: 200px;
+    margin-left: -50px;
 
-section .slider {
-    display: flex;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn {
     position: relative;
-    flex-wrap: wrap;
-    margin-left: 200px;
- 
-}
-
-.slider {
-    background: #FFFFFF;
-    margin: 0;
-    padding: 0;
-
+    width: 100vw;
+    height: 300px;
+    margin-top: 10PX;
 
 }
 
-.swiper {
-    width: 37%;
+.pic-ctn>img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 12s infinite;
+    border-radius: 10%;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-
+img:nth-child(2) {
+    animation-delay: 3s;
 }
 
-.swiper-slide img {
-    width: 100%;
-    border-radius: 5%;
+img:nth-child(3) {
+    animation-delay: 5s;
 }
 
-.swiper-pagination-bullet-active {
-    color: #10223A;
+img:nth-child(4) {
+    animation-delay: 7s;
 }
+
+
 
 /* ********************************************* SLIDER ENDS *************************************** */
 
@@ -345,9 +380,9 @@ section .liensyoutube {
     flex-direction: column;
     margin-top: 200px;
     height: 150vh;
-   background-color: #DEE9F7;
+    background-color: #DEE9F7;
     align-items: center;
-    
+
 
 }
 
@@ -357,9 +392,9 @@ section .liensyoutube {
     font-family: 'abeezee';
     text-transform: capitalize;
     color: #10223A;
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 50PX;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .liensyoutube .lien {
@@ -370,7 +405,7 @@ section .liensyoutube {
     justify-content: space-around;
     width: 100%;
     background-color: #DEE9F7;
-    margin-top: 100PX;
+    margin-top: 50PX;
     padding-top: 100PX;
 }
 
@@ -423,6 +458,97 @@ section .liensyoutube {
 }
 
 
+/* ************************************************ page la race starts here ***************************************** */
+
+.larace {
+    margin-left: 200px;
+    height: 100vh;
+}
+
+.physique {
+    display: flex;
+    justify-content: space-around;
+}
+
+.physique p {
+    display: flex;
+    width: 30vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'lobster two';
+}
+
+
+.larace nav  {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 80%;
+   
+}
+.larace section{
+    display: flex;
+    justify-content: center;
+}
+
+.larace a{
+    font-family: 'abeezee';
+    text-transform: uppercase;
+    background-color: #FDF3E2;
+    padding-left: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #10223A;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    transition: ease-in-out 0.7s;
+}
+
+.buttonphysique a{
+    background-color: #FAB005;
+}
+
+.larace nav a:hover{
+    color: #10223a;
+    padding: 20px;
+    background-color: #FAB005;
+    
+
+}
+
+.iconedogo{
+    rotate: -10deg;
+    padding-right: 5px;}
+
+.iconeeuro{
+    rotate: -10deg;
+    color: green;
+    padding-right: 5px;
+    opacity: 0.5;
+    
+}
+.iconesante{
+    rotate: -10deg;
+    padding-right: 5px;
+    color:red;
+    opacity: 0.7
+}
+.iconehouse{
+        padding-right: 5px;
+}
+
+.physique .image {
+    width: 400px;
+    height: 400px;
+    background-color: #FAB005;
+}
+
+
+
 @keyframes blob {
     0% {
         border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%;
@@ -472,16 +598,16 @@ section .liensyoutube {
 
 @keyframes blob3 {
     0% {
-        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37% ;
+        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
     }
 
     25% {
 
-        border-radius: 56% 44% 51% 49% / 63% 43% 57% 37% ;
+        border-radius: 56% 44% 51% 49% / 63% 43% 57% 37%;
     }
 
     50% {
-        border-radius: 56% 44% 26% 74% / 63% 43% 57% 37% ;
+        border-radius: 56% 44% 26% 74% / 63% 43% 57% 37%;
     }
 
     75% {
@@ -489,6 +615,6 @@ section .liensyoutube {
     }
 
     100% {
-        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37% ;
+        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
     }
 }

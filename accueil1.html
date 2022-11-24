@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
 
     <title>Le Bouvier Bernois</title>
 </head>
@@ -29,10 +29,10 @@
         <ul>
 
             <li>
-                <a href="https://www.google.fr">Accueil</a>
+                <a href="accueil1.html">Accueil</a>
             </li>
             <li>
-                <a href="https://www.google.fr">Origines</a>
+                <a href="origines.html">Origines</a>
             </li>
             <li>
                 <a href="https://www.google.fr">La race</a>
@@ -79,7 +79,7 @@
             <h1>Le Bouvier Bernois</h1>
             <h2>Tout savoir sur le Bouvier Bernois</h2>
             <div class="ancres">
-                <a href="#">Origines</a>
+                <a href="origines.html">Origines</a>
             </div>
             <div class="imagevague">
 
@@ -107,7 +107,7 @@
                     Le Bouvier Bernois est un fidèle compagnon qui est réputé pour sa nature docile
                 </p>
                 <div class="ancres">
-                    <a href="#">Origines</a>
+                    <a href="origines.html">Origines</a>
                 </div>
             </aside>
 
@@ -121,33 +121,11 @@
 
 
     <section>
-        <div class="slider">
-
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 3.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 4.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 5.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="Images p1/slider 6.jpg" />
-                    </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
+        <div class="pic-ctn">
+            <img src="Images p1/slider 2.jpg" alt="" class="pic">
+            <img src="Images p1/slider 3.jpg" alt="" class="pic">
+            <img src="Images p1/slider 4.jpg" alt="" class="pic">
+            <img src="Images p1/slider 6.jpg" alt="" class="pic">
         </div>
     </section>
 
@@ -181,28 +159,7 @@
 
 
     <script src="https://kit.fontawesome.com/f6643294dc.js" crossorigin="anonymous"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
 
 </body>
 
