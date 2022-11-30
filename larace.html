@@ -80,51 +80,93 @@
 
 
     <main class="larace">
+        <div class="laracediv">
 
-        <section>
-            <nav>
-                <a href="larace.html">
-                    <div class="iconedogo"></i><i class="fa-solid fa-dog"></i></i></div>Physique
-                </a>
-                <a href="laraceprix.html">
-                    <div class="iconeeuro"><i class="fa-solid fa-euro-sign"></i></div>Prix
-                </a>
-                <a href="laracesante.html">
-                    <div class="iconesante"><i class="fa-solid fa-notes-medical"></i></div>santé
-                </a>
-                <a href="laracenom.html">
-                    <div class="iconehouse"><i class="fa-solid fa-house"></i></div>Noms
-                </a>
-            </nav>
-        </section>
+            <section>
+                <nav>
+                    <a href="#physique">
+                        <div class="iconedogo"></i><i class="fa-solid fa-dog"></i></i></div>Physique
+                    </a>
+                    <a href="#leprix">
+                        <div class="iconeeuro"><i class="fa-solid fa-euro-sign"></i></div>Prix
+                    </a>
+                    <a href="#sante">
+                        <div class="iconesante"><i class="fa-solid fa-notes-medical"></i></div>santé
+                    </a>
+                    <a href="#containerName">
+                        <div class="iconehouse"><i class="fa-solid fa-house"></i></div>Noms
+                    </a>
+                </nav>
+            </section>
+
+            <article class="physique" id="physique">
+
+                <div class="image">
+                    <img src="/Images p1/img_gabarit_Bernois.jpg" width="100%" height="100%" alt="vwxwxvwxvxv">
+
+                </div>
+
+                <p>Dimensions du Bouvier bernois adulte
+                    Chien femelle : Entre 58 et 66 cm
+                    Chien mâle : Entre 64 et 70 cm
+                    Poids du Bouvier bernois adulte
+                    Chien femelle : Entre 40 et 45 kg
+                    Chien mâle : Entre 50 et 60 kg
+                </p>
+            </article>
+
+            <article class="leprix" id="leprix">
+
+                <h1>Prix <i class="fa-solid fa-sack-dollar"></i></h1>
+                <p>
+                    En moyenne, il faut compter 1300€ pour adopter un Bouvier Bernois inscrit au LOF. Le prix sera
+                    variable selon les origines du chien, son âge et son sexe. Les lignées les plus hautes peuvent être
+                    vendues jusqu’à 1900€.
+
+                    Concernant le budget mensuel, il est estimé à environ 70€/mois en comptant des croquettes de bonne
+                    qualité et les soins nécessaires au maintien en bonne santé de ce grand bouvier suisse.
+
+                </p>
+            </article>
+
+            <article class="sante" id="sante">
+                <p>
+                    <h1>La santé</h1>
+
+                    <H2>Espérance de vie moyenne</H2>
+
+                    environ 8 ans
+
+                    <h2>Résistant / robuste</h2>
+
+                    Le Bouvier est un chien rustique et donc assez robuste de nature, il est par contre sujet à
+                    plusieurs maladies. Et, comme de nombreux chiens de grande taille, il sera prédisposé à certains
+                    problèmes physiques, notamment si on ne respecte pas sa condition, sa croissance et sa morphologie
+                    pour diverses activités canines (traction, agility).
 
 
+                </p>
+            </article>
+            <section class="containerName" id="containerName">
+                <div class="listName">
+                    <h1>Faites votre liste de noms <i class="fa-sharp fa-solid fa-file-signature"></i></h1>
+                    <h5><a href="#">(ou cliquez ici si vous êtes à court d'idées)</a></h5>
 
-        <article class="physique">
+                    <form id="form">
+                        <label for="noms">Noms:</label>
+                        <input type="text" name="noms" placeholder="Ecrivez un nom ici" id="nomInput" value="" />
 
-            <div class="image">
-                <img src="/Images p1/img_gabarit_Bernois.jpg" width="100%" height="100%" alt="vwxwxvwxvxv">
-
-            </div>
-
-            <p>Dimensions du Bouvier bernois adulte
-
-
-                Chien femelle : Entre 58 et 66 cm
-                Chien mâle : Entre 64 et 70 cm
-
-
-                Poids du Bouvier bernois adulte
-
-
-                Chien femelle : Entre 40 et 45 kg
-                Chien mâle : Entre 50 et 60 kg
-
-
-            </p>
-
-
-        </article>
+                        <input type="submit" value="Retenez !" />
+                    </form>
+                    <h3>Votre liste</h3>
+                    <div class="listedenoms">
+                        <ul id="listNoms">
+                            <li>Tim</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
 
@@ -136,6 +178,7 @@
 
 
     <script src="https://kit.fontawesome.com/f6643294dc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

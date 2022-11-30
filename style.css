@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style-type: none;
+    font-family: 'abeezee';
+    scroll-behavior: smooth;
+
 }
 
 body {
     box-sizing: border-box;
+
 
 }
 
@@ -447,7 +452,7 @@ section .liensyoutube {
 
 
 .liensyoutube iframe {
-    border-radius: 20%;
+    border-radius: 60%;
     width: 27vw;
     padding: 60px;
 }
@@ -466,12 +471,17 @@ section .liensyoutube {
 
 .larace {
     margin-left: 200px;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+
 }
 
 .physique {
     display: flex;
     justify-content: space-around;
+    padding-top: 30%;
 }
 
 .physique p {
@@ -488,20 +498,24 @@ section .liensyoutube {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 100px;
     width: 80%;
+
+
 }
 
 .larace section {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 .larace a {
     font-family: 'abeezee';
     text-transform: uppercase;
-    background-color: #FDF3E2;
+    background: none;
     padding-left: 10px;
     padding: 20px;
     border-radius: 50%;
@@ -522,35 +536,128 @@ section .liensyoutube {
 
 .leprix {
     display: flex;
-    width: 100%;
+    width: 30vw;
     justify-content: center;
+    background-color: #DEE9F7;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 100px;
+
+}
+
+.leprix h1 {
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #10223A;
 }
 
 .leprix p {
+    color: #10223A;
     display: flex;
     text-align: center;
-    justify-content: center;
-    width: 60%;
-    border: solid green;
-    background-color: green;
-
-
+    width: 20vw;
+    margin: auto;
+    line-height: 22px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    
 }
 
 .sante {
+
     display: flex;
-    width: 100%;
+    width: 30vw;
     justify-content: center;
+    background-color: #E3F4ED;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    margin: auto;
+    border-radius: 5%;
+    margin-top: 100px;
+
 }
+
+
 
 .sante p {
     display: flex;
     text-align: center;
     justify-content: center;
     width: 60%;
-    border: solid pink;
-    background-color: pink;
+    
 
+}
+
+.containerName {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding-top: 20%;
+    z-index: 0;
+
+}
+
+.listName {
+    text-align: center;
+}
+
+.listName h1,
+.listName h3,
+.listName form,
+.listName h5 {
+    padding: 15px;
+}
+
+.listName h5 {
+    display: flex;
+    font-style: italic;
+    opacity: 0.7;
+    background: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.listName h5 a {
+    background: none;
+    font-size: 10px;
+    text-transform: lowercase;
+}
+
+.listName h1 {
+    font-family: 'Fredericka the Great';
+    opacity: 0.9;
+    font-size: 25px;
+    color: #10223A;
+}
+
+
+#listNoms {
+    display: flex;
+    list-style: inside;
+    height: 60vh;
+    flex-direction: column;
+
+}
+
+#listNoms li {
+    text-align: start;
+    padding: 10px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #FFFFFF;
+}
+
+.listedenoms {
+    display: flex;
+    justify-content: center;
+    background-color: #111112;
+    border-radius: 10%;
 
 }
 
