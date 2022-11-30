@@ -19,7 +19,8 @@ body {
 
 .sidebar {
     position: fixed;
-    background-color: #10223A;
+    background: rgb(4, 9, 16);
+    background: radial-gradient(circle, rgba(4, 9, 16, 1) 37%, rgba(16, 34, 58, 1) 75%);
     width: 200px;
     height: 100%;
     top: 0;
@@ -152,12 +153,13 @@ body {
 
 .imagevague {
 
-    background-size: contain;
+    background-size: cover;
     width: 100%;
 }
 
 .ancres {
-    background-color: #FAB005;
+    background: rgb(250, 176, 5);
+    background: radial-gradient(circle, rgba(250, 176, 5, 1) 49%, rgba(207, 103, 10, 1) 88%);
     text-align: center;
     width: 120px;
     border-radius: 80%;
@@ -241,6 +243,7 @@ section aside i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
 }
 
 .imagevague {
@@ -379,9 +382,10 @@ section .liensyoutube {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
-    height: 150vh;
+    height: 100%;
     background-color: #DEE9F7;
     align-items: center;
+    flex-wrap: wrap;
 
 
 }
@@ -404,7 +408,7 @@ section .liensyoutube {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    background-color: #DEE9F7;
+    background-color: #E1E9F2;
     margin-top: 50PX;
     padding-top: 100PX;
 }
@@ -413,7 +417,7 @@ section .liensyoutube {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FDF3E2;
+    background-color: #FFFAFA;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
     margin-bottom: 50px;
     animation: blob 10s ease-in-out infinite;
@@ -423,7 +427,7 @@ section .liensyoutube {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FDF3E2;
+    background-color: #FFFAFA;
     padding: 20px;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
     margin-bottom: 50px;
@@ -434,7 +438,7 @@ section .liensyoutube {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FDF3E2;
+    background-color: #FFFAFA;
     padding: 20px;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
     margin-bottom: 50px;
@@ -479,7 +483,7 @@ section .liensyoutube {
 }
 
 
-.larace nav  {
+.larace nav {
     height: 10vh;
     display: flex;
     justify-content: space-around;
@@ -487,14 +491,14 @@ section .liensyoutube {
     margin-top: 150px;
     margin-bottom: 100px;
     width: 80%;
-   
 }
-.larace section{
+
+.larace section {
     display: flex;
     justify-content: center;
 }
 
-.larace a{
+.larace a {
     font-family: 'abeezee';
     text-transform: uppercase;
     background-color: #FDF3E2;
@@ -508,37 +512,70 @@ section .liensyoutube {
     transition: ease-in-out 0.7s;
 }
 
-.buttonphysique a{
-    background-color: #FAB005;
-}
-
-.larace nav a:hover{
+.larace nav a:hover {
     color: #10223a;
     padding: 20px;
     background-color: #FAB005;
-    
+
 
 }
 
-.iconedogo{
-    rotate: -10deg;
-    padding-right: 5px;}
+.leprix {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
-.iconeeuro{
+.leprix p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    border: solid green;
+    background-color: green;
+
+
+}
+
+.sante {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.sante p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    border: solid pink;
+    background-color: pink;
+
+
+}
+
+.iconedogo {
+    rotate: -10deg;
+    padding-right: 5px;
+}
+
+.iconeeuro {
     rotate: -10deg;
     color: green;
     padding-right: 5px;
     opacity: 0.5;
-    
+
 }
-.iconesante{
+
+.iconesante {
     rotate: -10deg;
     padding-right: 5px;
-    color:red;
+    color: red;
     opacity: 0.7
 }
-.iconehouse{
-        padding-right: 5px;
+
+.iconehouse {
+    padding-right: 5px;
 }
 
 .physique .image {
@@ -617,4 +654,38 @@ section .liensyoutube {
     100% {
         border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
     }
+}
+
+
+/* *************************************            media screen         ***********************************************/
+
+
+
+@media screen and (max-width: 800px) {
+    .mainpageaccueil {
+        background-size: contain;
+    }
+
+    .imagevague {
+        background-position: -300px -350px;
+        margin-bottom: -300px;
+
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .mainpageaccueil {
+        margin-left: 0;
+    }
+
+    .page2 {
+        margin-left: 0;
+    }
+
+    section .liensyoutube {
+        margin-left: 0;
+    }
+
 }
