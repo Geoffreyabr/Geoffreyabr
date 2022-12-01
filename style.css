@@ -26,11 +26,12 @@ body {
     position: fixed;
     background: rgb(4, 9, 16);
     background: radial-gradient(circle, rgba(4, 9, 16, 1) 37%, rgba(16, 34, 58, 1) 75%);
-    width: 200px;
+    width: 15%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+
 }
 
 .logotete {
@@ -61,7 +62,7 @@ body {
 
 .sidebar ul li {
     margin: 20px 20px;
-    line-height: 40px;
+    line-height: 55px;
     padding-top: 20px;
     font-family: 'abeezee';
     text-transform: uppercase;
@@ -69,15 +70,12 @@ body {
     transition: all 0.8s ease-in-out;
     font-weight: 600;
     font-size: 14px;
-
+    list-style-type: none;
 
 }
 
 .sidebar ul li a {
     color: #FFFFFF;
-
-
-
 }
 
 
@@ -125,18 +123,20 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-left: 200px;
-    width: 100%;
-    background-image: url('Images p1/main1.jpg');
+    margin-left: 15%;
+    width: 85%;
+    background-color: #10223a;
     background-repeat: no-repeat;
     opacity: 3.5;
-    background-size: cover;
+    background-size: contain;
+    height: 80vh;
 
 
 
 }
 
 .mainpageaccueil h1 {
+    display: flex;
     color: #FFFFFF;
     font-size: 70px;
     font-weight: 600;
@@ -185,8 +185,10 @@ body {
     height: 80vh;
     display: flex;
     justify-content: space-around;
-    margin-left: 200px;
+    margin-left: 15%;
     flex-wrap: wrap;
+    align-content: space-around;
+    width: 85%;
 
 }
 
@@ -205,6 +207,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    justify-content: space-evenly;
 
 }
 
@@ -242,12 +245,9 @@ section aside i {
 .mainorigines {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    height: 500px;
-    background-image: url('Images p1/bernese-mountain-dog-1177074_960_720.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    margin-left: 15%;
+    width: 85%;
+    height: 100%;
 
 }
 
@@ -255,14 +255,15 @@ section aside i {
     background-image: url('Images p1/wave (1).svg');
     height: 600px;
     background-size: cover;
+
 }
 
 .mainorigines section {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
-    flex-wrap: wrap;
+    height: 70vh;
+    margin-left: 15%;
 }
 
 
@@ -276,6 +277,13 @@ section aside i {
     text-transform: uppercase;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
     justify-content: center;
+    height: 70vh;
+    width: 100%;
+    background-image: url('Images p1/bernese-mountain-dog-1177074_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
 
 }
 
@@ -291,32 +299,44 @@ section aside i {
 
 
 .mainorigines article img {
-    margin-left: 100px;
     border-radius: 7% 7% 7% 7%;
     box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
 
 
 }
 
+.oldpic {
+
+    margin-top: 100px;
+    flex-wrap: wrap;
+    height: 40vh;
+
+}
+
 section article .vieilleimage1 {
-    margin-left: 13em;
-    margin-bottom: -1em;
+    margin-left: 5%;
+    width: 100%;
+}
+
+.vieilleimage2 {
+    width: 100%;
 }
 
 .mainorigines section aside {
     font-family: 'lobster two';
     font-size: 20px;
     width: 30%;
-    margin-left: 70px;
+    margin-left: 5%;
     letter-spacing: 1.5px;
 
 }
 
 /* *************************** slider ***************************** */
-.pic-ctn {
-    width: 100vw;
-    height: 200px;
-    margin-left: -50px;
+
+
+.slider-container {
+    height: 50vh;
+    margin-bottom: 10%;
 
 }
 
@@ -348,11 +368,12 @@ section article .vieilleimage1 {
 }
 
 .pic-ctn {
+    display: flex;
     position: relative;
-    width: 100vw;
-    height: 300px;
+    width: 100%;
+    height: 50vh;
     margin-top: 10PX;
-
+    margin: auto;
 }
 
 .pic-ctn>img {
@@ -383,16 +404,15 @@ img:nth-child(4) {
 /* ************************* PAGE ACCUEIL 3 LIENS YOUTUBE **************************** */
 
 section .liensyoutube {
-    margin-left: 200px;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 00px;
     height: 100%;
     background-color: #DEE9F7;
     align-items: center;
     flex-wrap: wrap;
-
-
+    width: 85%;
 }
 
 .liensyoutube h1 {
@@ -452,7 +472,7 @@ section .liensyoutube {
 
 
 .liensyoutube iframe {
-    border-radius: 60%;
+    border-radius: 100px;
     width: 27vw;
     padding: 60px;
 }
@@ -481,7 +501,7 @@ section .liensyoutube {
 .physique {
     display: flex;
     justify-content: space-around;
-    padding-top: 30%;
+    padding-top: 25%;
 }
 
 .physique p {
@@ -501,6 +521,8 @@ section .liensyoutube {
     margin-top: 100px;
     margin-bottom: 100px;
     width: 80%;
+    background-color: #F7F5C4;
+    border-radius: 8px;
 
 
 }
@@ -510,6 +532,7 @@ section .liensyoutube {
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .larace a {
@@ -530,8 +553,6 @@ section .liensyoutube {
     color: #10223a;
     padding: 20px;
     background-color: #FAB005;
-
-
 }
 
 .leprix {
@@ -543,8 +564,8 @@ section .liensyoutube {
     text-align: center;
     height: 60vh;
     margin: auto;
-    border-radius: 5%;
-    margin-top: 100px;
+    border-radius: 8px;
+    margin-top: 280px;
 
 }
 
@@ -554,6 +575,7 @@ section .liensyoutube {
     padding-top: 30px;
     padding-bottom: 15px;
     color: #10223A;
+    rotate: -5deg;
 }
 
 .leprix p {
@@ -563,23 +585,23 @@ section .liensyoutube {
     width: 20vw;
     margin: auto;
     line-height: 22px;
-    padding-bottom: 50px;
     font-size: 17px;
-    
+    line-height: 25px;
+
 }
 
 .sante {
 
     display: flex;
     width: 30vw;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #E3F4ED;
     flex-direction: column;
     text-align: center;
     height: 60vh;
     margin: auto;
-    border-radius: 5%;
-    margin-top: 100px;
+    border-radius: 8px;
+    margin-top: 280px;
 
 }
 
@@ -590,17 +612,36 @@ section .liensyoutube {
     text-align: center;
     justify-content: center;
     width: 60%;
-    
+}
 
+.fa-notes-medical {
+    color: red;
+    opacity: 0.7;
+}
+
+.sante h1 {
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 55px;
+    color: #10223A;
+    rotate: -5deg;
+    font-size: 30px;
+}
+
+.sante h2 {
+    font-size: 20px;
 }
 
 .containerName {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     height: 100vh;
     align-items: center;
-    padding-top: 20%;
-    z-index: 0;
+    padding-top: 18%;
+
 
 }
 
@@ -612,7 +653,7 @@ section .liensyoutube {
 .listName h3,
 .listName form,
 .listName h5 {
-    padding: 15px;
+    padding: 13px;
 }
 
 .listName h5 {
@@ -648,7 +689,7 @@ section .liensyoutube {
 
 #listNoms li {
     text-align: start;
-    padding: 10px;
+    padding: 8px;
     font-family: 'Fredericka the Great', cursive;
     color: #FFFFFF;
 }
@@ -657,7 +698,7 @@ section .liensyoutube {
     display: flex;
     justify-content: center;
     background-color: #111112;
-    border-radius: 10%;
+    border-radius: 8px;
 
 }
 
@@ -689,6 +730,19 @@ section .liensyoutube {
     width: 400px;
     height: 400px;
     background-color: #FAB005;
+}
+
+.trait1,
+.trait2 {
+    width: 60%;
+    height: 1px;
+    color: black;
+    background-color: #111112;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    opacity: 0.2;
+
 }
 
 
@@ -771,7 +825,10 @@ section .liensyoutube {
 @media screen and (max-width: 800px) {
     .mainpageaccueil {
         background-size: contain;
+        width: 100%;
+        margin-left: 0;
     }
+
 
     .imagevague {
         background-position: -300px -350px;
@@ -779,20 +836,121 @@ section .liensyoutube {
 
     }
 
+    .pic-ctn img {
+        left: calc(50% - 30%);
+        width: 60%;
+    }
+
     .sidebar {
         display: none;
     }
 
-    .mainpageaccueil {
+
+    .mainorigines {
         margin-left: 0;
+        width: 100%;
     }
 
     .page2 {
         margin-left: 0;
+        width: 100%;
     }
 
     section .liensyoutube {
         margin-left: 0;
+        width: 100%;
     }
 
+    .page2 aside {
+        width: 30%;
+        height: 300px;
+
+    }
+
+    .mainorigines .lienheader {
+        height: 40vh;
+    }
+
+    section .oldpic {
+        flex-direction: column;
+
+    }
+
+    .mainorigines section{
+        margin-left: 0;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .mainpageaccueil {
+        background-size: contain;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+
+
+
+    .mainpageaccueil h1 {
+        font-size: 50px;
+    }
+
+    .mainpageaccueil h2 {
+        font-size: 20px;
+    }
+
+    .ancres a {
+        font-size: 14px;
+    }
+
+    .ancres {
+        padding: 5px;
+        width: 80px;
+    }
+
+    .mainpageaccueil {
+        height: 50vh;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .page2 aside h4 {
+        font-size: 20px;
+    }
+
+    .page2 img {
+        height: 35vh;
+    }
+
+    .page2 aside {
+        font-size: 14px;
+
+    }
+
+    .liensyoutube h1 {
+        font-size: 30px;
+    }
+
+    .liensyoutube .lien {
+
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pic-ctn img {
+        left: calc(50% - 30%);
+        width: 70%
+    }
+
+    .mainorigines section{
+        height: 100vh;
+    }
+   .mainorigines section aside {
+    width: 60vw;
+   margin-top: 5%;
+   font-size: 13px;
+   } 
 }
