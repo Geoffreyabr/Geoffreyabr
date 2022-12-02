@@ -473,7 +473,7 @@ section .liensyoutube {
 
 .liensyoutube iframe {
     border-radius: 100px;
-    width: 27vw;
+    width: 28vw;
     padding: 60px;
 }
 
@@ -890,6 +890,9 @@ section .liensyoutube {
     }
     .physique{
         padding-top: 30%;
+    }
+    .liensyoutube iframe{
+        width: 70vw;
     }
 }
 /* ***************************1150px */
