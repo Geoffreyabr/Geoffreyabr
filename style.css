@@ -67,8 +67,9 @@ body {
   list-style-type: none;
 }
 
-.sidebar ul li a {
+.sidebar a {
   color: #ffffff;
+  margin: auto;
 }
 
 .local-phone {
@@ -100,11 +101,8 @@ body {
 .sidebar a:hover {
   background-color: #fab005;
   color: #10223a;
-  -webkit-transition: width 1s 1s ease-in;
-  -moz-transition: width 1s 1s ease-in;
-  -o-transition: width 1s 1s ease-in;
-  transition: width 1s 1s ease-in;
-}
+  padding: 10px;
+ }
 
 /* **************************************  SIDEBAR END HERE       ******************************************** */
 
@@ -134,12 +132,14 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   transition: ease-in-out 0.5s;
-}
+  margin: auto;
+  }
 
 .navbarlist-mobile a:hover{
   color: #10223a;
-  background-color: #f4f4f4;
-  padding: 5px;
+  background-color: #fab005;
+  padding: 15px;
+  border-radius: 50%;
 
 }
 .navbar-mobile i {
