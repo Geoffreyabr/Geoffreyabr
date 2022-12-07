@@ -1,978 +1,999 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'abeezee';
-    scroll-behavior: smooth;
-
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "abeezee";
+  scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-
-
+  box-sizing: border-box;
 }
 
 /******************************************* SIDEBAR START HERE  **************************************************/
 
-
 .sidebar {
-    position: fixed;
-    background: rgb(4, 9, 16);
-    background: radial-gradient(circle, rgba(4, 9, 16, 1) 37%, rgba(16, 34, 58, 1) 75%);
-    width: 15%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
+  position: fixed;
+  background: rgb(4, 9, 16);
+  background: radial-gradient(
+    circle,
+    rgba(4, 9, 16, 1) 37%,
+    rgba(16, 34, 58, 1) 75%
+  );
+  width: 15%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .logotete {
-    text-align: center;
-    padding: 20px;
-    transition: all 0.8s ease-in-out;
-    font-weight: 600;
-    border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
-
+  text-align: center;
+  padding: 20px;
+  transition: all 0.8s ease-in-out;
+  font-weight: 600;
+  border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
 }
 
 .sidebar h2 {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'AbeeZee';
-    font-weight: 600;
-    transition: all 0.8s ease-in-out;
-    font-size: 28px;
-
+  text-align: center;
+  color: #ffffff;
+  font-family: "AbeeZee";
+  font-weight: 600;
+  transition: all 0.8s ease-in-out;
+  font-size: 28px;
 }
 
 .sidebar h2 span {
-    font-family: 'Lobster two';
-    text-transform: lowercase;
-    font-weight: 500;
+  font-family: "Lobster two";
+  text-transform: lowercase;
+  font-weight: 500;
 }
 
-
 .sidebar ul li {
-    margin: 20px 20px;
-    line-height: 55px;
-    padding-top: 20px;
-    font-family: 'abeezee';
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.8s ease-in-out;
-    font-weight: 600;
-    font-size: 14px;
-    list-style-type: none;
-
+  margin: 20px 20px;
+  line-height: 55px;
+  padding-top: 20px;
+  font-family: "abeezee";
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.8s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  list-style-type: none;
 }
 
 .sidebar ul li a {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-
 .local-phone {
-    color: #FFFFFF;
-    padding-top: 30px;
-    margin-left: 10px;
+  color: #ffffff;
+  padding-top: 30px;
+  margin-left: 10px;
 }
 
 .social-media a {
-    color: #FAB005;
-    margin: 20px;
+  color: #fab005;
+  margin: 20px;
 }
 
 .social-media {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .loc-tel i {
-    color: #FAB005;
-    padding: 10px;
+  color: #fab005;
+  padding: 10px;
 }
 
-
 .loc-tel {
-    font-family: 'abeezee';
-    font-size: 11px;
-    font-weight: lighter;
+  font-family: "abeezee";
+  font-size: 11px;
+  font-weight: lighter;
 }
 
 .sidebar a:hover {
-    background-color: #FAB005;
-    color: #10223a;
-    -webkit-transition: width 1s 1s ease-in;
-    -moz-transition: width 1s 1s ease-in;
-    -o-transition: width 1s 1s ease-in;
-    transition: width 1s 1s ease-in;
+  background-color: #fab005;
+  color: #10223a;
+  -webkit-transition: width 1s 1s ease-in;
+  -moz-transition: width 1s 1s ease-in;
+  -o-transition: width 1s 1s ease-in;
+  transition: width 1s 1s ease-in;
 }
-
 
 /* **************************************  SIDEBAR END HERE       ******************************************** */
 
+.navbarlist-mobile {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  background-color: black;
+  opacity: 0.8;
+  border: solid #f4f4f4;
+  border-right: none;
+  border-radius: 8px;
+
+  width: 50%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: -50%;
+  transition: left 0.8s;
+  z-index: 990;
+}
+
+.navbarlist-mobile a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.navbar-mobile i {
+  z-index: 999;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: black;
+}
+.navbar-mobile {
+  display: none;
+}
+
+.list-visible {
+  left: 0;
+}
+.icon-visible {
+  color: #ffffff;
+}
+
 .mainpageaccueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 15%;
-    width: 85%;
-    background-color: #10223a;
-    background-repeat: no-repeat;
-    opacity: 3.5;
-    background-size: contain;
-    height: 80vh;
-
-
-
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 15%;
+  width: 85%;
+  background-image: url("Images p1/869864.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 0;
 }
 
 .mainpageaccueil h1 {
-    display: flex;
-    color: #FFFFFF;
-    font-size: 70px;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'AbeeZee';
-    border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
-    letter-spacing: -5px;
-
-
+  display: flex;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "AbeeZee";
+  border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
+  letter-spacing: -5px;
 }
 
 .mainpageaccueil h2 {
-    color: #FFFFFF;
-    font-family: 'AbeeZee';
-    border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
-    margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "AbeeZee";
+  border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
+  margin-bottom: 50px;
 }
 
-.imagevague {
 
-    background-size: cover;
-    width: 100%;
-}
 
 .ancres {
-    background: rgb(250, 176, 5);
-    background: radial-gradient(circle, rgba(250, 176, 5, 1) 49%, rgba(207, 103, 10, 1) 88%);
-    text-align: center;
-    width: 120px;
-    border-radius: 80%;
-    padding: 8px
+  background: rgb(250, 176, 5);
+  background: radial-gradient(
+    circle,
+    rgba(250, 176, 5, 1) 49%,
+    rgba(207, 103, 10, 1) 88%
+  );
+  text-align: center;
+  width: 120px;
+  border-radius: 80%;
+  padding: 8px;
 }
 
 .ancres a {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-family: 'abeezee';
-    text-shadow: -1px 2px #10223a;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "abeezee";
+  text-shadow: -1px 2px #10223a;
 }
 
-
 .page2 {
-    height: 80vh;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 15%;
-    flex-wrap: wrap;
-    align-content: space-around;
-    width: 85%;
-
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 85%;
 }
 
 .page2 p {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .page2 aside {
-    width: 20vw;
-    font-size: 18px;
-    font-family: 'abeezee';
-    height: 380px;
-    align-items: flex-start;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    justify-content: space-evenly;
-
+  width: 20vw;
+  font-size: 18px;
+  font-family: "abeezee";
+  height: 380px;
+  align-items: flex-start;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
 }
 
 .page2 aside h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .page2 img {
-    width: 100%;
-    height: 50vh;
-    border-radius: 60%;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
+  width: 100%;
+  height: 50vh;
+  border-radius: 60%;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
 }
 
 .page2 .ancres {
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 6%;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 6%;
 }
 
-
-
-
 section aside i {
-    color: #FAB005;
-    opacity: 0.5;
-    rotate: 20deg;
-    padding: 10px
+  color: #fab005;
+  opacity: 0.5;
+  rotate: 20deg;
+  padding: 10px;
 }
 
 /* ****************************************    PAGE ORIGINES    ******************************************* */
 
-
-
 .mainorigines {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-    width: 85%;
-    height: 100%;
-
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  width: 85%;
+  height: 100%;
 }
 
 .imagevague {
-    background-image: url('Images p1/wave (1).svg');
-    height: 600px;
-    background-size: cover;
+  background-image: url("Images p1/wave (1).svg");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;  
+  left: 0;
 
+}
+
+.imagevague2{
+    position: absolute;
+    height: 38vh;
+    background-image: url('Images p1/wave (6).svg');
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-size: cover;   
+    
 }
 
 .mainorigines section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70vh;
-    margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  margin-left: 15%;
 }
 
-
-
 .mainorigines .lienheader {
-    display: flex;
-    font-weight: 800;
-    font-size: 15px;
-    font-family: 'abeezee';
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    height: 70vh;
-    width: 100%;
-    background-image: url('Images p1/bernese-mountain-dog-1177074_960_720.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-
-
+  display: flex;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: "abeezee";
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  background-image: url("Images p1/bernese-mountain-dog-1177074_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 20%;
+  position: relative;
 }
 
 .lienheader a {
-    color: #FAB005;
-
+  color: #fab005;
 }
 
 .lienheader a:hover {
-    color: #FFFFFF;
-    transition: 1s;
+  color: #ffffff;
+  transition: 1s;
 }
 
-
 .mainorigines article img {
-    border-radius: 7% 7% 7% 7%;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
-
-
+  border-radius: 7% 7% 7% 7%;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
 }
 
 .oldpic {
-
-    margin-top: 100px;
-    flex-wrap: wrap;
-    height: 40vh;
-
+  margin-top: 100px;
+  flex-wrap: wrap;
+  height: 40vh;
 }
 
 section article .vieilleimage1 {
-    margin-left: 5%;
-    width: 100%;
+  margin-left: 5%;
+  width: 100%;
 }
 
 .vieilleimage2 {
-    width: 100%;
+  width: 100%;
 }
 
 .mainorigines section aside {
-    font-family: 'lobster two';
-    font-size: 20px;
-    width: 30%;
-    margin-left: 5%;
-    letter-spacing: 1.5px;
-
+  font-family: "lobster two";
+  font-size: 20px;
+  width: 30%;
+  margin-left: 5%;
+  letter-spacing: 1.5px;
 }
 
 /* *************************** slider ***************************** */
 
-
 .slider-container {
-    height: 50vh;
-    margin-bottom: 10%;
-
+  height: 40vh;
+  margin-bottom: 10%;
 }
 
 @keyframes display {
-    0% {
-        transform: translateX(200px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
 
-    10% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-    20% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-    30% {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateX(-200px);
-        opacity: 0;
-    }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
 }
 
 .pic-ctn {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    margin-top: 10PX;
-    margin: auto;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 10px;
+  margin: auto;
 }
 
-.pic-ctn>img {
-    position: absolute;
-    top: 0;
-    left: calc(50% - 100px);
-    opacity: 0;
-    animation: display 12s infinite;
-    border-radius: 10%;
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 12s infinite;
+  border-radius: 10%;
 }
 
 img:nth-child(2) {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 img:nth-child(3) {
-    animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 img:nth-child(4) {
-    animation-delay: 7s;
+  animation-delay: 7s;
 }
-
-
 
 /* ********************************************* SLIDER ENDS *************************************** */
 
 /* ************************* PAGE ACCUEIL 3 LIENS YOUTUBE **************************** */
 
 section .liensyoutube {
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 00px;
-    height: 100%;
-    background-color: #DEE9F7;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 85%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #dee9f7;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
 }
 
 .liensyoutube h1 {
-    display: flex;
-    justify-content: center;
-    font-family: 'abeezee';
-    text-transform: capitalize;
-    color: #10223A;
-    margin-top: 50px;
-    font-size: 50PX;
-    font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  font-family: "abeezee";
+  text-transform: capitalize;
+  color: #10223a;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .liensyoutube .lien {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #E1E9F2;
-    margin-top: 50PX;
-    padding-top: 100PX;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #e1e9f2;
+  margin-top: 50px;
+  padding-top: 100px;
 }
 
 .liensyoutube .blob {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFAFA;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
-    margin-bottom: 50px;
-    animation: blob 10s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffafa;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
+  margin-bottom: 50px;
+  animation: blob 10s ease-in-out infinite;
 }
 
 .liensyoutube .blob2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFAFA;
-    padding: 20px;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
-    margin-bottom: 50px;
-    animation: blob2 10s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffafa;
+  padding: 20px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
+  margin-bottom: 50px;
+  animation: blob2 10s ease-in-out infinite;
 }
 
 .liensyoutube .blob3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFAFA;
-    padding: 20px;
-    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
-    margin-bottom: 50px;
-    animation: blob3 9s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffafa;
+  padding: 20px;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.48);
+  margin-bottom: 50px;
+  animation: blob3 9s ease-in-out infinite;
 }
-
 
 .liensyoutube iframe {
-    border-radius: 100px;
-    width: 28vw;
-    padding: 60px;
+  border-radius: 100px;
+  width: 28vw;
+  padding: 60px;
 }
-
 
 .liensyoutube i {
-    color: #FAB005;
-    opacity: 0.5;
-    rotate: -20deg;
-    padding: 20px;
-    margin-top: -5%;
+  color: #fab005;
+  opacity: 0.5;
+  rotate: -20deg;
+  padding: 20px;
+  margin-top: -5%;
 }
-
 
 /* ************************************************ page la race starts here ***************************************** */
 
 .larace {
-    margin-left: 15%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-
+  margin-left: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
 }
 
 .physique {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25%;
 }
 
 .physique p {
-    display: flex;
-    width: 30vh;
-    align-items: center;
-    justify-content: center;
-    font-family: 'lobster two';
+  display: flex;
+  width: 30vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "lobster two";
 }
-
 
 .larace nav {
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 80%;
-    background-color: #F7F5C4;
-    border-radius: 8px;
-
-
-}
-
-.larace section {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(244, 244, 244, 0.9);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 980;
 }
 
 .larace a {
-    font-family: 'abeezee';
-    text-transform: uppercase;
-    background: none;
-    padding-left: 10px;
-    padding: 20px;
-    border-radius: 50%;
-    color: #10223A;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    transition: ease-in-out 0.7s;
+  font-family: "abeezee";
+  text-transform: uppercase;
+  background: none;
+  padding-left: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  color: #10223a;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: ease-in-out 0.7s;
 }
 
 .larace nav a:hover {
-    color: #10223a;
-    padding: 20px;
-    background-color: #FAB005;
+  color: #f4f4f4;
+  padding: 20px;
+  background-color: #10223a;
 }
 
 .leprix {
-    display: flex;
-    width: 30vw;
-    justify-content: center;
-    background-color: #DEE9F7;
-    flex-direction: column;
-    text-align: center;
-    height: 60vh;
-    margin: auto;
-    border-radius: 8px;
-    margin-top: 280px;
-
+  display: flex;
+  width: 30vw;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 220px;
+  position: relative;
 }
 
 .leprix h1 {
-    text-align: start;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    color: #10223A;
-    rotate: -5deg;
+  color: #10223a;
+  rotate: -10deg;
+  position: absolute;
+  top: 0px;
+  font-size: 30px;
 }
 
 .leprix p {
-    color: #10223A;
-    display: flex;
-    text-align: center;
-    width: 20vw;
-    margin: auto;
-    line-height: 22px;
-    font-size: 17px;
-    line-height: 25px;
-
+  color: #10223a;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  line-height: 22px;
+  font-size: 17px;
+  line-height: 25px;
+  background: rgb(222, 233, 247);
+  background: radial-gradient(
+    circle,
+    rgba(222, 233, 247, 1) 57%,
+    rgba(245, 248, 252, 1) 98%
+  );
+  padding: 10%;
 }
 
 .sante {
-
-    display: flex;
-    width: 30vw;
-    justify-content: space-between;
-    background-color: #E3F4ED;
-    flex-direction: column;
-    text-align: center;
-    height: 60vh;
-    margin: auto;
-    border-radius: 8px;
-    margin-top: 280px;
-
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 220px;
+  background: rgb(227, 244, 237);
+  background: radial-gradient(
+    circle,
+    rgba(227, 244, 237, 1) 57%,
+    rgba(133, 201, 194, 1) 98%
+  );
+  position: relative;
 }
 
-
-
 .sante p {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 60%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .fa-notes-medical {
-    color: red;
-    opacity: 0.7;
+  color: red;
+  opacity: 0.7;
 }
 
 .sante h1 {
-    text-align: start;
-    padding-left: 20px;
-    padding-top: 0px;
-    padding-bottom: 55px;
-    color: #10223A;
-    rotate: -5deg;
-    font-size: 30px;
+  color: #10223a;
+  rotate: -5deg;
+  font-size: 30px;
+  position: absolute;
+  left: -5px;
+  top: -10px;
 }
 
 .sante h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .containerName {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    padding-top: 18%;
-
-
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding-top: 70px;
 }
 
 .listName {
-    text-align: center;
+  text-align: center;
 }
 
 .listName h1,
 .listName h3,
 .listName form,
 .listName h5 {
-    padding: 13px;
+  padding: 13px;
 }
 
 .listName h5 {
-    display: flex;
-    font-style: italic;
-    opacity: 0.7;
-    background: none;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  font-style: italic;
+  opacity: 0.7;
+  background: none;
+  text-align: center;
+  justify-content: center;
 }
 
 .listName h5 a {
-    background: none;
-    font-size: 10px;
-    text-transform: lowercase;
+  background: none;
+  font-size: 10px;
+  text-transform: lowercase;
 }
 
 .listName h1 {
-    font-family: 'Fredericka the Great';
-    opacity: 0.9;
-    font-size: 25px;
-    color: #10223A;
+  font-family: "Fredericka the Great";
+  opacity: 0.9;
+  font-size: 25px;
+  color: #10223a;
 }
 
-
 #listNoms {
-    display: flex;
-    list-style: inside;
-    height: 60vh;
-    flex-direction: column;
-
+  display: flex;
+  list-style: inside;
+  height: 60vh;
+  flex-direction: column;
 }
 
 #listNoms li {
-    text-align: start;
-    padding: 8px;
-    font-family: 'Fredericka the Great', cursive;
-    color: #FFFFFF;
+  text-align: start;
+  padding: 8px;
+  font-family: "Fredericka the Great", cursive;
+  color: #ffffff;
 }
 
 .listedenoms {
-    display: flex;
-    justify-content: center;
-    background-color: #111112;
-    border-radius: 8px;
-
+  display: flex;
+  justify-content: center;
+  background-color: #111112;
+  border-radius: 8px;
 }
 
 .iconedogo {
-    rotate: -10deg;
-    padding-right: 5px;
+  rotate: -10deg;
+  padding-right: 5px;
 }
 
 .iconeeuro {
-    rotate: -10deg;
-    color: green;
-    padding-right: 5px;
-    opacity: 0.5;
-
+  rotate: -10deg;
+  color: green;
+  padding-right: 5px;
+  opacity: 0.5;
 }
 
 .iconesante {
-    rotate: -10deg;
-    padding-right: 5px;
-    color: red;
-    opacity: 0.7
+  rotate: -10deg;
+  padding-right: 5px;
+  color: red;
+  opacity: 0.7;
 }
 
 .iconehouse {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 .physique .image {
-    width: 400px;
-    height: 400px;
-    background-color: #FAB005;
+  width: 400px;
+  height: 400px;
+  background-color: #fab005;
 }
 
 .trait1,
-.trait2 {
-    width: 60%;
-    height: 1px;
-    color: black;
-    background-color: #111112;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 200px;
-    opacity: 0.2;
-
+.trait2,
+.trait3 {
+  width: 60%;
+  height: 1px;
+  color: black;
+  background-color: #111112;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  opacity: 0.2;
 }
 
-
-
 @keyframes blob {
-    0% {
-        border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%;
-    }
+  0% {
+    border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%;
+  }
 
-    25% {
+  25% {
+    border-radius: 53% 47% 70% 30% / 30% 30% 70% 70%;
+  }
 
-        border-radius: 53% 47% 70% 30% / 30% 30% 70% 70%;
-    }
+  50% {
+    border-radius: 53% 47% 70% 30% / 30% 68% 32% 70%;
+  }
 
-    50% {
-        border-radius: 53% 47% 70% 30% / 30% 68% 32% 70%;
-    }
+  75% {
+    border-radius: 53% 47% 30% 70% / 30% 77% 23% 70%;
+  }
 
-    75% {
-        border-radius: 53% 47% 30% 70% / 30% 77% 23% 70%;
-    }
-
-    100% {
-        border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%;
-    }
-
+  100% {
+    border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%;
+  }
 }
 
 @keyframes blob2 {
-    0% {
-        border-radius: 54% 46% 70% 30% / 30% 47% 53% 70%;
-    }
+  0% {
+    border-radius: 54% 46% 70% 30% / 30% 47% 53% 70%;
+  }
 
-    25% {
+  25% {
+    border-radius: 78% 22% 70% 30% / 30% 47% 53% 70%;
+  }
 
-        border-radius: 78% 22% 70% 30% / 30% 47% 53% 70%;
-    }
+  50% {
+    border-radius: 25% 75% 24% 76% / 92% 30% 70% 8%;
+  }
 
-    50% {
-        border-radius: 25% 75% 24% 76% / 92% 30% 70% 8%;
-    }
+  75% {
+    border-radius: 49% 51% 41% 59% / 28% 54% 46% 72%;
+  }
 
-    75% {
-        border-radius: 49% 51% 41% 59% / 28% 54% 46% 72%
-    }
-
-    100% {
-        border-radius: 54% 46% 70% 30% / 30% 47% 53% 70%;
-    }
+  100% {
+    border-radius: 54% 46% 70% 30% / 30% 47% 53% 70%;
+  }
 }
 
 @keyframes blob3 {
-    0% {
-        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
-    }
+  0% {
+    border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
+  }
 
-    25% {
+  25% {
+    border-radius: 56% 44% 51% 49% / 63% 43% 57% 37%;
+  }
 
-        border-radius: 56% 44% 51% 49% / 63% 43% 57% 37%;
-    }
+  50% {
+    border-radius: 56% 44% 26% 74% / 63% 43% 57% 37%;
+  }
 
-    50% {
-        border-radius: 56% 44% 26% 74% / 63% 43% 57% 37%;
-    }
+  75% {
+    border-radius: 49% 51% 41% 59% / 28% 54% 46% 72%;
+  }
 
-    75% {
-        border-radius: 49% 51% 41% 59% / 28% 54% 46% 72%
-    }
-
-    100% {
-        border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
-    }
+  100% {
+    border-radius: 34% 66% 51% 49% / 63% 43% 57% 37%;
+  }
 }
-
 
 /* *************************************            media screen         ***********************************************/
 
-
-
 @media screen and (max-width: 800px) {
-    .mainpageaccueil {
-        background-size: contain;
-        width: 100%;
-        margin-left: 0;
-    }
+  .navbar-mobile {
+    display: block;
+  }
+  .imagevague2{
+    height: 24vh;
+  }
 
+  .larace nav{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    .imagevague {
-        background-position: -300px -350px;
-        margin-bottom: -300px;
+  .mainpageaccueil {
+    width: 100%;
+    margin-left: 0;
+    height: 60VH;
+    justify-content: flex-start;
+  }
 
-    }
+  
+  .pic-ctn img {
+    left: calc(50% - 30%);
+    width: 60%;
+  }
 
-    .pic-ctn img {
-        left: calc(50% - 30%);
-        width: 60%;
-    }
+  .sidebar {
+    display: none;
+  }
 
-    .sidebar {
-        display: none;
-    }
+  .mainorigines {
+    margin-left: 0;
+    width: 100%;
+  }
 
+  .page2 {
+    margin-left: 0;
+    width: 100%;
+  }
 
-    .mainorigines {
-        margin-left: 0;
-        width: 100%;
-    }
+  section .liensyoutube {
+    margin-left: 0;
+    width: 100%;
+  }
 
-    .page2 {
-        margin-left: 0;
-        width: 100%;
-    }
+  .page2 aside {
+    width: 30%;
+    height: 300px;
+  }
 
-    section .liensyoutube {
-        margin-left: 0;
-        width: 100%;
-    }
+  .mainorigines .lienheader {
+    height: 50vh;
+  }
 
-    .page2 aside {
-        width: 30%;
-        height: 300px;
+  section .oldpic {
+    flex-direction: column;
+  }
 
-    }
+  .mainorigines section {
+    margin-left: 0;
+    justify-content: space-around;
+  }
 
-    .mainorigines .lienheader {
-        height: 50vh;
-    }
+  .larace {
+    margin-left: 0;
+    width: 100%;
+  }
 
-    section .oldpic {
-        flex-direction: column;
+  .physique .image {
+    width: 300px;
+    height: 300px;
+  }
 
-    }
+  .physique {
+    padding-top: 30%;
+  }
 
-    .mainorigines section{
-        margin-left: 0;
-        justify-content: space-around;
-    }
-    .larace{
-        margin-left: 0;
-        width: 100%;
-    }
-    .physique .image{
-        width: 300px;
-        height: 300px;
-    }
-    .physique{
-        padding-top: 30%;
-    }
-    .liensyoutube iframe{
-        width: 70vw;
-    }
+  .liensyoutube iframe {
+    width: 70vw;
+  }
+  .sante {
+    width: 50vw;
+  }
+  .leprix {
+    width: 50vw;
+  }
+  .leprix h1 {
+    top: 10px;
+  }
 }
-/* ***************************1150px */
-@media screen and (max-width: 1150px) {
-    .mainpageaccueil {
-        background-size: contain;
-    }
 
-}
 /* *************************535px */
 @media screen and (max-width: 535px) {
+  .slider-container {
+    height: 35vh;
+    margin-bottom: 10%;
+  }
 
+  .imagevague2{
+    height: 20vh;
+  }
 
+  .mainpageaccueil h1 {
+    font-size: 50px;
+  }
 
-    .mainpageaccueil h1 {
-        font-size: 50px;
-    }
+  .mainpageaccueil h2 {
+    font-size: 20px;
+  }
 
-    .mainpageaccueil h2 {
-        font-size: 20px;
-    }
+  .ancres a {
+    font-size: 14px;
+  }
 
-    .ancres a {
-        font-size: 14px;
-    }
+  .ancres {
+    padding: 5px;
+    width: 80px;
+  }
 
-    .ancres {
-        padding: 5px;
-        width: 80px;
-    }
+  .mainpageaccueil {
+    height: 50vh;
+    width: 100%;
+    margin-left: 0;
+  }
 
-    .mainpageaccueil {
-        height: 50vh;
-        width: 100%;
-        margin-left: 0;
-    }
+  .page2 aside h4 {
+    font-size: 20px;
+  }
 
-    .page2 aside h4 {
-        font-size: 20px;
-    }
+  .page2 img {
+    height: 35vh;
+  }
 
-    .page2 img {
-        height: 35vh;
-    }
+  .page2 aside {
+    font-size: 14px;
+  }
 
-    .page2 aside {
-        font-size: 14px;
+  .liensyoutube h1 {
+    font-size: 30px;
+  }
 
-    }
+  .liensyoutube .lien {
+    margin-top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
 
-    .liensyoutube h1 {
-        font-size: 30px;
-    }
+  .pic-ctn img {
+    left: calc(50% - 30%);
+    width: 70%;
+  }
 
-    .liensyoutube .lien {
+  .mainorigines section {
+    height: 100vh;
+  }
 
-        margin-top: 0;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .pic-ctn img {
-        left: calc(50% - 30%);
-        width: 70%
-    }
-
-    .mainorigines section{
-        height: 100vh;
-    }
-   .mainorigines section aside {
+  .mainorigines section aside {
     width: 60vw;
-   margin-top: 5%;
-   font-size: 13px;
-   } 
-   .physique .image{
+    margin-top: 5%;
+    font-size: 13px;
+  }
+
+  .physique .image {
     width: 200px;
     height: 200px;
-}
-.physique{
-    padding-top: 35%;
-}
+  }
 
+  .physique {
+    padding-top: 35%;
+  }
+  .leprix {
+    width: 70vw;
+  }
+  .sante {
+    width: 70vw;
+  }
 }
