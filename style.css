@@ -70,6 +70,7 @@ body {
 .sidebar a {
   color: #ffffff;
   margin: auto;
+  transition: 0.7s;
 }
 
 .local-phone {
@@ -102,7 +103,7 @@ body {
   background-color: #fab005;
   color: #10223a;
   padding: 10px;
- }
+}
 
 /* **************************************  SIDEBAR END HERE       ******************************************** */
 
@@ -112,7 +113,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  background-color:#10223a;
+  background-color: #10223a;
   opacity: 0.9;
   border: solid #f4f4f4;
   border-right: none;
@@ -131,24 +132,24 @@ body {
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
   margin: auto;
-  }
+}
 
-.navbarlist-mobile a:hover{
+.navbarlist-mobile a:hover {
   color: #10223a;
   background-color: #fab005;
-  padding: 15px;
-  border-radius: 50%;
-
+  padding: 12px;
+  border-radius: 64% 100% 48% 70%;
 }
-.navbar-mobile i {
+
+.fa-bars {
   z-index: 999;
   position: fixed;
   top: 10px;
   left: 10px;
   font-size: 30px;
-  color: black;
+  color: #10223a;
 }
 .navbar-mobile {
   display: none;
@@ -158,18 +159,18 @@ body {
   left: 0;
 }
 .icon-visible {
-  color: red;
+  color: #ffffff;
 }
 
 .mainpageaccueil {
-    position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-left: 15%;
   width: 85%;
-  background-image: url("Images p1/869864.jpg");
+  background-image: url("Imagesp1/869864.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -194,8 +195,6 @@ body {
   border-radius: 30% 70% 70% 30% / 30% 45% 55% 70;
   margin-bottom: 50px;
 }
-
-
 
 .ancres {
   background: rgb(250, 176, 5);
@@ -282,25 +281,23 @@ section aside i {
 }
 
 .imagevague {
-  background-image: url("Images p1/wave (1).svg");
+  background-image: url("Imagesp1/wave (1).svg");
   background-size: cover;
   height: 40vh;
   width: 100%;
   position: absolute;
-  bottom: 0;  
+  bottom: 0;
   left: 0;
-
 }
 
-.imagevague2{
-    position: absolute;
-    height: 38vh;
-    background-image: url('Images p1/wave (6).svg');
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-size: cover;   
-    
+.imagevague2 {
+  position: absolute;
+  height: 38vh;
+  background-image: url("Imagesp1/wave (6).svg");
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
 }
 
 .mainorigines section {
@@ -322,7 +319,7 @@ section aside i {
   justify-content: center;
   height: 70vh;
   width: 100%;
-  background-image: url("Images p1/bernese-mountain-dog-1177074_960_720.jpg");
+  background-image: url("Imagesp1/bernese-mountain-dog-1177074_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 20%;
@@ -331,11 +328,11 @@ section aside i {
 
 .lienheader a {
   color: #fab005;
+  transition: 0.7s;
 }
 
 .lienheader a:hover {
   color: #ffffff;
-  transition: 1s;
 }
 
 .mainorigines article img {
@@ -443,7 +440,6 @@ section .liensyoutube {
   align-items: center;
   flex-wrap: wrap;
   width: 85%;
-  
 }
 
 .liensyoutube h1 {
@@ -567,7 +563,7 @@ section .liensyoutube {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  transition: ease-in-out 0.7s;
+  transition: 1.7s;
 }
 
 .larace nav a:hover {
@@ -835,11 +831,11 @@ section .liensyoutube {
   .navbar-mobile {
     display: block;
   }
-  .imagevague2{
+  .imagevague2 {
     height: 24vh;
   }
 
-  .larace nav{
+  .larace nav {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -847,11 +843,10 @@ section .liensyoutube {
   .mainpageaccueil {
     width: 100%;
     margin-left: 0;
-    height: 60VH;
+    height: 60vh;
     justify-content: flex-start;
   }
 
-  
   .pic-ctn img {
     left: calc(50% - 30%);
     width: 60%;
@@ -929,7 +924,7 @@ section .liensyoutube {
     margin-bottom: 10%;
   }
 
-  .imagevague2{
+  .imagevague2 {
     height: 20vh;
   }
 
