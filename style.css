@@ -29,6 +29,10 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .logotete {
@@ -75,17 +79,21 @@ body {
 
 .local-phone {
   color: #ffffff;
-  padding-top: 30px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .social-media a {
   color: #fab005;
-  margin: 20px;
+  
 }
 
+
 .social-media {
-  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
 }
 
 .loc-tel i {
@@ -99,10 +107,18 @@ body {
   font-weight: lighter;
 }
 
-.sidebar a:hover {
+.sidebar ul li a:hover {
   background-color: #fab005;
   color: #10223a;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.social-media i:hover{
+  color: #10223a;
+  background-color: #fab005;
+  padding: 5px;
+  border-radius: 100%;
 }
 
 /* **************************************  SIDEBAR END HERE       ******************************************** */
@@ -170,7 +186,7 @@ body {
   align-items: center;
   margin-left: 15%;
   width: 85%;
-  background-image: url("Imagesp1/869864.jpg");
+  background-image: url("Imagesp1/mainpage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -298,6 +314,7 @@ section aside i {
   bottom: 0;
   left: 0;
   background-size: cover;
+  margin-bottom: -5px;
 }
 
 .mainorigines section {
@@ -578,11 +595,16 @@ section .liensyoutube {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 60vh;
   margin: auto;
   border-radius: 8px;
   margin-top: 220px;
   position: relative;
+  background: radial-gradient(
+    circle,
+    rgba(222, 233, 247, 1) 57%,
+    rgba(245, 248, 252, 1) 98%
+  );
 }
 
 .leprix h1 {
@@ -601,12 +623,6 @@ section .liensyoutube {
   line-height: 22px;
   font-size: 17px;
   line-height: 25px;
-  background: rgb(222, 233, 247);
-  background: radial-gradient(
-    circle,
-    rgba(222, 233, 247, 1) 57%,
-    rgba(245, 248, 252, 1) 98%
-  );
   padding: 10%;
 }
 
@@ -616,7 +632,7 @@ section .liensyoutube {
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 60vh;
   margin: auto;
   border-radius: 8px;
   margin-top: 220px;
@@ -654,17 +670,20 @@ section .liensyoutube {
 }
 
 .containerName {
-  position: relative;
-  z-index: 1;
+  
   display: flex;
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  padding-top: 70px;
+  
 }
 
 .listName {
   text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .listName h1,
@@ -758,6 +777,53 @@ section .liensyoutube {
   margin-bottom: 200px;
   opacity: 0.2;
 }
+.domaine {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.domaine1,
+.domaine2,
+.domaine3 {
+  height: 55vh;
+  width: 20vw;
+  background-color: #dee9f7;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.domaine1 a:hover,
+.domaine2 a:hover,
+.domaine3 a:hover {
+  color: #fab005;
+  transition: 0.5s;
+}
+.domaine1 a,
+.domaine2 a,
+.domaine3 a {
+  color: #10223a;
+}
+
+.domaine-change {
+  height: 65vh;
+  width: 25vw;
+}
+
+.domaine img {
+  width: 10vw;
+  height: 20%;
+}
+.img-change {
+  height: 30%;
+}
 
 @keyframes blob {
   0% {
@@ -831,6 +897,13 @@ section .liensyoutube {
   .navbar-mobile {
     display: block;
   }
+  .domaine1,
+  .domaine2,
+  .domaine3 {
+    height: 45vh;
+    width: 25vw;
+  }
+
   .imagevague2 {
     height: 24vh;
   }
@@ -923,6 +996,22 @@ section .liensyoutube {
     height: 35vh;
     margin-bottom: 10%;
   }
+  .domaine1,
+  .domaine2,
+  .domaine3 {
+    height: 30vh;
+    width: 30vw;
+  }
+  .larace nav{
+    top: 50px;
+    
+  }
+  .larace a{
+    font-size: 10px;
+  }
+  .listName{
+    padding-top: 55px;
+  }
 
   .imagevague2 {
     height: 20vh;
@@ -994,7 +1083,7 @@ section .liensyoutube {
   }
 
   .physique {
-    padding-top: 35%;
+    padding-top: 45%;
   }
   .leprix {
     width: 70vw;
