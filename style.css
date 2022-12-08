@@ -86,9 +86,7 @@ body {
 
 .social-media a {
   color: #fab005;
-  
 }
-
 
 .social-media {
   display: flex;
@@ -114,7 +112,7 @@ body {
   padding: 5px;
 }
 
-.social-media i:hover{
+.social-media i:hover {
   color: #10223a;
   background-color: #fab005;
   padding: 5px;
@@ -589,6 +587,7 @@ section .liensyoutube {
   background-color: #10223a;
 }
 
+
 .leprix {
   display: flex;
   width: 30vw;
@@ -670,12 +669,10 @@ section .liensyoutube {
 }
 
 .containerName {
-  
   display: flex;
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  
 }
 
 .listName {
@@ -779,7 +776,7 @@ section .liensyoutube {
 }
 .domaine {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   background-color: #ffffff;
   width: 100%;
   justify-content: space-around;
@@ -900,8 +897,11 @@ section .liensyoutube {
   .domaine1,
   .domaine2,
   .domaine3 {
-    height: 45vh;
+    height: 35vh;
     width: 25vw;
+  }
+  .domaine{
+    height: 60vh;
   }
 
   .imagevague2 {
@@ -1002,14 +1002,25 @@ section .liensyoutube {
     height: 30vh;
     width: 30vw;
   }
-  .larace nav{
-    top: 50px;
-    
+  .domaine{
+    height: 40vh;
   }
-  .larace a{
+  .imagevague{
+    margin-bottom: -1px;
+  }
+  .larace nav {
+    top: 50px;
+  }
+  .mainorigines .lienheader {
+    background-position: 30% 20%;
+  }
+  .mainpageaccueil {
+    background-position: 30%;
+  }
+  .larace a {
     font-size: 10px;
   }
-  .listName{
+  .listName {
     padding-top: 55px;
   }
 
@@ -1091,4 +1102,7 @@ section .liensyoutube {
   .sante {
     width: 70vw;
   }
+  .larace nav a:hover{
+    padding: 10px;
+  } 
 }
