@@ -1005,6 +1005,10 @@ section .liensyoutube {
     width: 100%;
   }
 
+  .imagevague{
+    margin-bottom: -1px;
+  }
+
   .page2 aside {
     width: 30%;
     height: 300px;
@@ -1060,11 +1064,12 @@ section .liensyoutube {
   .domaine1,
   .domaine2,
   .domaine3 {
-    height: 30vh;
-    width: 30vw;
+    height: 15vh;
+    width: 50%;
   }
   .domaine{
-    height: 40vh;
+    height: 60vh;
+    flex-direction: column;
   }
   .imagevague{
     margin-bottom: -1px;
@@ -1090,11 +1095,11 @@ section .liensyoutube {
   }
 
   .mainpageaccueil h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .mainpageaccueil h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .ancres a {
