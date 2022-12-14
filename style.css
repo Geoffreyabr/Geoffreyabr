@@ -184,11 +184,12 @@ body {
   align-items: center;
   margin-left: 15%;
   width: 85%;
-  background-image: url("Imagesp1/mainpage.jpg");
+  background-image: url("Imagesp1/bouvierbleu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-position: 0;
+  background-position: 1;
+  
 }
 
 .mainpageaccueil h1 {
@@ -272,12 +273,7 @@ body {
 }
 
 .ancres {
-  background: rgb(250, 176, 5);
-  background: radial-gradient(
-    circle,
-    rgba(250, 176, 5, 1) 49%,
-    rgba(207, 103, 10, 1) 88%
-  );
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
   text-align: center;
   width: 120px;
   border-radius: 80%;
